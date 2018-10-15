@@ -82,6 +82,7 @@ const Cloudflare = auto(
         email: auth && auth.email,
         key: auth && auth.key,
         token: auth && auth.token,
+        cfRay: auth && auth.cfRay,
       };
 
       withEnvProxy(opts);
